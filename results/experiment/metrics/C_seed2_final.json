@@ -1,0 +1,128 @@
+{
+  "name": "C_seed2",
+  "instruction": "Read the following review and classify its sentiment as exactly one of: negative, neutral, or positive.",
+  "demos": [
+    [
+      "It 's difficult to feel anything much while watching this movie , beyond mild disturbance or detached pleasure at the acting .",
+      "negative"
+    ],
+    [
+      "Some movies can get by without being funny simply by structuring the scenes as if they were jokes : a setup , delivery and payoff .",
+      "neutral"
+    ],
+    [
+      "Poignant and delicately complex .",
+      "positive"
+    ],
+    [
+      "( A ) mess .",
+      "negative"
+    ],
+    [
+      "Call this The Full Monty on ice , the underdog sports team formula redux .",
+      "neutral"
+    ],
+    [
+      "The film 's appeal has a lot to do with the casting of Juliette Binoche as Sand , who brings to the role her pale , dark beauty and characteristic warmth .",
+      "positive"
+    ]
+  ],
+  "source_test": {
+    "accuracy": 0.7447963800904978,
+    "macro_f1": 0.6160673323090693,
+    "per_class": {
+      "negative": {
+        "precision": 0.7255075022065314,
+        "recall": 0.9013157894736842,
+        "f1": 0.8039119804400978,
+        "support": 912
+      },
+      "neutral": {
+        "precision": 0.3142857142857143,
+        "recall": 0.14138817480719795,
+        "f1": 0.1950354609929078,
+        "support": 389
+      },
+      "positive": {
+        "precision": 0.852549889135255,
+        "recall": 0.845984598459846,
+        "f1": 0.8492545554942021,
+        "support": 909
+      }
+    },
+    "confusion_matrix": {
+      "class_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          822,
+          55,
+          35
+        ],
+        [
+          236,
+          55,
+          98
+        ],
+        [
+          75,
+          65,
+          769
+        ]
+      ]
+    },
+    "n": 2210
+  },
+  "final_target_test": {
+    "accuracy": 0.773,
+    "macro_f1": 0.635221027473905,
+    "per_class": {
+      "negative": {
+        "precision": 0.717948717948718,
+        "recall": 0.98,
+        "f1": 0.828752642706131,
+        "support": 400
+      },
+      "neutral": {
+        "precision": 0.6153846153846154,
+        "recall": 0.12,
+        "f1": 0.20083682008368203,
+        "support": 200
+      },
+      "positive": {
+        "precision": 0.8602409638554217,
+        "recall": 0.8925,
+        "f1": 0.8760736196319018,
+        "support": 400
+      }
+    },
+    "confusion_matrix": {
+      "class_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          392,
+          2,
+          6
+        ],
+        [
+          124,
+          24,
+          52
+        ],
+        [
+          30,
+          13,
+          357
+        ]
+      ]
+    },
+    "n": 1000
+  }
+}

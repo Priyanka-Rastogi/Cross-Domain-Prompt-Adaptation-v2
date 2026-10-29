@@ -1,0 +1,154 @@
+{
+  "name": "B_seed0",
+  "instruction": "Please read the review carefully and determine if it expresses either an extremely positive, neutral, or negative sentiment.",
+  "demos": null,
+  "source_test": {
+    "accuracy": 0.642081447963801,
+    "macro_f1": 0.6142024054561096,
+    "per_class": {
+      "negative": {
+        "precision": 0.7742749054224464,
+        "recall": 0.6732456140350878,
+        "f1": 0.7202346041055718,
+        "support": 912
+      },
+      "neutral": {
+        "precision": 0.2735723771580345,
+        "recall": 0.5295629820051414,
+        "f1": 0.3607705779334501,
+        "support": 389
+      },
+      "positive": {
+        "precision": 0.9021084337349398,
+        "recall": 0.658965896589659,
+        "f1": 0.761602034329307,
+        "support": 909
+      }
+    },
+    "confusion_matrix": {
+      "class_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          614,
+          283,
+          15
+        ],
+        [
+          133,
+          206,
+          50
+        ],
+        [
+          46,
+          264,
+          599
+        ]
+      ]
+    },
+    "n": 2210
+  },
+  "final_target_test": {
+    "accuracy": 0.743,
+    "macro_f1": 0.717322749639409,
+    "per_class": {
+      "negative": {
+        "precision": 0.8223350253807107,
+        "recall": 0.81,
+        "f1": 0.8161209068010077,
+        "support": 400
+      },
+      "neutral": {
+        "precision": 0.43243243243243246,
+        "recall": 0.64,
+        "f1": 0.5161290322580645,
+        "support": 200
+      },
+      "positive": {
+        "precision": 0.9387096774193548,
+        "recall": 0.7275,
+        "f1": 0.819718309859155,
+        "support": 400
+      }
+    },
+    "confusion_matrix": {
+      "class_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          324,
+          73,
+          3
+        ],
+        [
+          56,
+          128,
+          16
+        ],
+        [
+          14,
+          95,
+          291
+        ]
+      ]
+    },
+    "n": 1000
+  },
+  "selected_instruction_index": 7,
+  "all_candidates": [
+    {
+      "index": 7,
+      "text": "Please read the review carefully and determine if it expresses either an extremely positive, neutral, or negative sentiment.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.6388489041677384
+    },
+    {
+      "index": 6,
+      "text": "Classify this review based on its sentiment, expressing an opinion of either negative, neutral, or positive.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5939379951770042
+    },
+    {
+      "index": 0,
+      "text": "Read the following review and classify its sentiment as exactly one of: negative, neutral, or positive.",
+      "source": "baseline",
+      "source_validation_macro_f1": 0.5468214628266557
+    },
+    {
+      "index": 3,
+      "text": "Classify your thoughts on this experience based solely on their content without reference to any prior sentiments or opinions expressed by others.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5419932429687057
+    },
+    {
+      "index": 5,
+      "text": "Please provide me with a specific review excerpt that I can analyze for its sentiment.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5364664832841934
+    },
+    {
+      "index": 4,
+      "text": "Review sentiment analysis requires identifying whether the overall tone is positive, negative, or neutral.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5311181344727346
+    },
+    {
+      "index": 1,
+      "text": "Read the following review carefully and classify its sentiment as either negative, neutral, or positive.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5144268047167825
+    },
+    {
+      "index": 2,
+      "text": "Please provide a review that indicates a sentiment towards the language, describing how well-written the text is.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.4907270340071275
+    }
+  ]
+}

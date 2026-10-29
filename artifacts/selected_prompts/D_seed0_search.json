@@ -1,0 +1,441 @@
+{
+  "best": {
+    "instruction_index": 6,
+    "demo_set_index": 2,
+    "macro_f1": 0.673230559377536
+  },
+  "all_results": [
+    {
+      "instruction_index": 6,
+      "demo_set_index": 2,
+      "macro_f1": 0.673230559377536
+    },
+    {
+      "instruction_index": 7,
+      "demo_set_index": 4,
+      "macro_f1": 0.6697663593118047
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 0,
+      "macro_f1": 0.6678419861749406
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 6,
+      "macro_f1": 0.6666617375959937
+    },
+    {
+      "instruction_index": 7,
+      "demo_set_index": 0,
+      "macro_f1": 0.6657693196517648
+    },
+    {
+      "instruction_index": 7,
+      "demo_set_index": 2,
+      "macro_f1": 0.66517991190639
+    },
+    {
+      "instruction_index": 7,
+      "demo_set_index": 3,
+      "macro_f1": 0.6630206886187259
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 7,
+      "macro_f1": 0.6623813225049577
+    },
+    {
+      "instruction_index": 7,
+      "demo_set_index": 8,
+      "macro_f1": 0.6614732277874008
+    },
+    {
+      "instruction_index": 7,
+      "demo_set_index": 6,
+      "macro_f1": 0.6613545083509403
+    },
+    {
+      "instruction_index": 7,
+      "demo_set_index": 7,
+      "macro_f1": 0.660691487184499
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 5,
+      "macro_f1": 0.6604017416333506
+    },
+    {
+      "instruction_index": 7,
+      "demo_set_index": 5,
+      "macro_f1": 0.6601042719955094
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 8,
+      "macro_f1": 0.6596173352496114
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 3,
+      "macro_f1": 0.6567127763635808
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 1,
+      "macro_f1": 0.6563922081357695
+    },
+    {
+      "instruction_index": 7,
+      "demo_set_index": 1,
+      "macro_f1": 0.6558439009419401
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 4,
+      "macro_f1": 0.6465439766792201
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 9,
+      "macro_f1": 0.6403780693687198
+    },
+    {
+      "instruction_index": 7,
+      "demo_set_index": 9,
+      "macro_f1": 0.6371698547295077
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 3,
+      "macro_f1": 0.636221654411877
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 0,
+      "macro_f1": 0.6302505514199063
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 6,
+      "macro_f1": 0.6299088945412007
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 2,
+      "macro_f1": 0.6280058158232438
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 1,
+      "macro_f1": 0.627250147459398
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 7,
+      "macro_f1": 0.6271255033846947
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 5,
+      "macro_f1": 0.6135258016870077
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 4,
+      "macro_f1": 0.6114180820948337
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 9,
+      "macro_f1": 0.6014850567814137
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 8,
+      "macro_f1": 0.594918013808503
+    }
+  ],
+  "top_instructions": [
+    {
+      "index": 7,
+      "text": "Please read the review carefully and determine if it expresses either an extremely positive, neutral, or negative sentiment.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.6388489041677384
+    },
+    {
+      "index": 6,
+      "text": "Classify this review based on its sentiment, expressing an opinion of either negative, neutral, or positive.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5939379951770042
+    },
+    {
+      "index": 0,
+      "text": "Read the following review and classify its sentiment as exactly one of: negative, neutral, or positive.",
+      "source": "baseline",
+      "source_validation_macro_f1": 0.5468214628266557
+    }
+  ],
+  "demo_sets": [
+    [
+      [
+        "You leave feeling like you 've endured a long workout without your pulse ever racing .",
+        "negative"
+      ],
+      [
+        "Some are fascinating and others are not , and in the end , it is almost a good movie .",
+        "neutral"
+      ],
+      [
+        "A lot of the credit for the film 's winning tone must go to Grant , who has n't lost a bit of the dry humor that first made audiences on both sides of the Atlantic love him .",
+        "positive"
+      ],
+      [
+        "Has nothing good to speak about other than the fact that it is relatively short , tries its best to hide the fact that Seagal 's overweight and out of shape .",
+        "negative"
+      ],
+      [
+        "The climactic events are so well realized that you may forget all about the original conflict , just like the movie does",
+        "neutral"
+      ],
+      [
+        "Graced with the kind of social texture and realism that would be foreign in American teen comedies .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "And Diesel is n't the actor to save it .",
+        "negative"
+      ],
+      [
+        "( Allen 's ) been making piffle for a long while , and Hollywood Ending may be his way of saying that piffle is all that the airhead movie business deserves from him right now .",
+        "neutral"
+      ],
+      [
+        "Watching War Photographer , you come to believe that Nachtwey hates the wars he shows and empathizes with the victims he reveals .",
+        "positive"
+      ],
+      [
+        "Director David Fincher and writer David Koepp ca n't sustain it .",
+        "negative"
+      ],
+      [
+        "Interesting , but not compelling .",
+        "neutral"
+      ],
+      [
+        "A movie that both thrills the eye and , in its over-the-top way , touches the heart .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "It 's difficult to feel anything much while watching this movie , beyond mild disturbance or detached pleasure at the acting .",
+        "negative"
+      ],
+      [
+        "Some movies can get by without being funny simply by structuring the scenes as if they were jokes : a setup , delivery and payoff .",
+        "neutral"
+      ],
+      [
+        "Poignant and delicately complex .",
+        "positive"
+      ],
+      [
+        "( A ) mess .",
+        "negative"
+      ],
+      [
+        "Call this The Full Monty on ice , the underdog sports team formula redux .",
+        "neutral"
+      ],
+      [
+        "The film 's appeal has a lot to do with the casting of Juliette Binoche as Sand , who brings to the role her pale , dark beauty and characteristic warmth .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "The notion of deleting emotion from people , even in an advanced Prozac Nation , is so insanely dysfunctional that the rampantly designed Equilibrium becomes a concept doofus .",
+        "negative"
+      ],
+      [
+        "An unflinching look at the world 's dispossessed .",
+        "neutral"
+      ],
+      [
+        "Highly recommended viewing for its courage , ideas , technical proficiency and great acting .",
+        "positive"
+      ],
+      [
+        "Not only is it hokey , manipulative and as bland as Wonder Bread dipped in milk , but it also does the absolute last thing we need Hollywood doing to us : It preaches .",
+        "negative"
+      ],
+      [
+        "It 's an often-cute film but either needs more substance to fill the time or some judicious editing .",
+        "neutral"
+      ],
+      [
+        "Interesting both as a historical study and as a tragic love story .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "Fluffy and disposible .",
+        "negative"
+      ],
+      [
+        "That death is merely a transition is a common tenet in the world 's religions .",
+        "neutral"
+      ],
+      [
+        "The film is enriched by an imaginatively mixed cast of antic spirits , headed by Christopher Plummer as the subtlest and most complexly evil Uncle Ralph I 've ever seen in the many film and stage adaptations of the work .",
+        "positive"
+      ],
+      [
+        "Everything about Girls Ca n't Swim , even its passages of sensitive observation , feels secondhand , familiar -- and not in a good way .",
+        "negative"
+      ],
+      [
+        "You really have to salute writer-director Haneke ( he adapted Elfriede Jelinek 's novel ) for making a film that is n't nearly as graphic but much more powerful , brutally shocking and difficult to watch .",
+        "neutral"
+      ],
+      [
+        "Secretary is just too original to be ignored .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "Opera on film is never satisfactory .",
+        "negative"
+      ],
+      [
+        "it may play well as a double feature with mainstream foreign mush like My Big Fat Greek Wedding",
+        "neutral"
+      ],
+      [
+        "In addition to Hoffman 's powerful acting clinic , this is that rare drama that offers a thoughtful and rewarding glimpse into the sort of heartache everyone has felt , or will feel someday .",
+        "positive"
+      ],
+      [
+        "... its solemn pretension prevents us from sharing the awe in which it holds itself .",
+        "negative"
+      ],
+      [
+        "Robin Williams departs from his fun friendly demeanor in exchange for a darker unnerving role .",
+        "neutral"
+      ],
+      [
+        "Peralta captures , in luminous interviews and amazingly evocative film from three decades ago , the essence of the Dogtown experience .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "( A ) poorly executed comedy .",
+        "negative"
+      ],
+      [
+        "It 's up to you to decide whether to admire these people 's dedication to their cause or be repelled by their dogmatism , manipulativeness and narrow , fearful view of American life .",
+        "neutral"
+      ],
+      [
+        "This charming but slight tale has warmth , wit and interesting characters compassionately portrayed .",
+        "positive"
+      ],
+      [
+        "A dramatic comedy as pleasantly dishonest and pat as any Hollywood fluff .",
+        "negative"
+      ],
+      [
+        "( Taylor ) takes us on a ride that 's consistently surprising , easy to watch -- but , oh , so dumb .",
+        "neutral"
+      ],
+      [
+        "Mel Gibson fights the good fight in Vietnam in director Randall Wallace 's flag-waving war flick with a core of decency .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "It 's provocative stuff , but the speculative effort is hampered by Taylor 's cartoonish performance and the film 's ill-considered notion that Hitler 's destiny was shaped by the most random of chances .",
+        "negative"
+      ],
+      [
+        "Like Mike is a harmlessly na\u00efve slice of b-ball fantasy , fit for filling in during the real NBA 's off-season .",
+        "neutral"
+      ],
+      [
+        "A quietly moving look back at what it was to be Iranian-American in 1979 .",
+        "positive"
+      ],
+      [
+        "Wildly incompetent but brilliantly named Half Past Dead -- or for Seagal pessimists : Totally Past His Prime .",
+        "negative"
+      ],
+      [
+        "Soderbergh seems capable only of delivering artfully lighted , earnest inquiries that lack the kind of genuine depth that would make them redeemable .",
+        "neutral"
+      ],
+      [
+        "Bogdanovich puts history in perspective and , via Kirsten Dunst 's remarkable performance , he showcases Davies as a young woman of great charm , generosity and diplomacy .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "`` White Oleander , '' the movie , is akin to a Reader 's Digest condensed version of the source material .",
+        "negative"
+      ],
+      [
+        "While Holm is terrific as both men and Hjejle quite appealing , the film fails to make the most out of the intriguing premise .",
+        "neutral"
+      ],
+      [
+        "Those moviegoers who would automatically bypass a hip-hop documentary should give `` Scratch '' a second look .",
+        "positive"
+      ],
+      [
+        "A fan film that for the uninitiated plays better on video with the sound turned down .",
+        "negative"
+      ],
+      [
+        "As his circle of friends keeps getting smaller one of the characters in Long Time Dead says ` I 'm telling you , this is f \\*\\*\\* ed ' .",
+        "neutral"
+      ],
+      [
+        "A very capable nailbiter .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "We can tell what it is supposed to be , but ca n't really call it a work of art .",
+        "negative"
+      ],
+      [
+        "It 's difficult to discern if this is a crazy work of disturbed genius or merely 90 minutes of post-adolescent Electra rebellion .",
+        "neutral"
+      ],
+      [
+        "The film has the high-buffed gloss and high-octane jolts you expect of De Palma , but what makes it transporting is that it 's also one of the smartest , most pleasurable expressions of pure movie love to come from an American director in years .",
+        "positive"
+      ],
+      [
+        "It just does n't have anything really interesting to say .",
+        "negative"
+      ],
+      [
+        "You bet there is and it 's what makes this rather convoluted journey worth taking .",
+        "neutral"
+      ],
+      [
+        "Evokes a palpable sense of disconnection , made all the more poignant by the incessant use of cell phones .",
+        "positive"
+      ]
+    ]
+  ]
+}

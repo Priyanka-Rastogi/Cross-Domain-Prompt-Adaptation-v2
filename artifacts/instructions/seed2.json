@@ -1,0 +1,50 @@
+[
+  {
+    "index": 0,
+    "text": "Read the following review and classify its sentiment as exactly one of: negative, neutral, or positive.",
+    "source": "baseline",
+    "source_validation_macro_f1": 0.5468214628266557
+  },
+  {
+    "index": 1,
+    "text": "Please read the following review and classify its sentiment as precisely one of: positive, neutral, or negative.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5836696794236712
+  },
+  {
+    "index": 2,
+    "text": "Based on the review content, determine if it expresses an entirely neutral, positive, or negative sentiment.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.6622690404689452
+  },
+  {
+    "index": 3,
+    "text": "Given this review: 'It seems like a dull, repetitive film that lacks engagement and doesn't offer anything special. This could all potentially be due to the poor acting and low budget. Is it even worth watching? Not at all.' Classify its sentiment as either negative, neutral, or positive",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5614992942911324
+  },
+  {
+    "index": 4,
+    "text": "Label this review as either positive, neutral, or negative.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5504660125379331
+  },
+  {
+    "index": 5,
+    "text": "Classify the sentiment of the review as either negative, neutral, or positive.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5608786718724956
+  },
+  {
+    "index": 6,
+    "text": "Please provide a textual description of the review you want analyzed.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.540080670769619
+  },
+  {
+    "index": 7,
+    "text": "Please read the following review carefully and classify its sentiment using the label: negative.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5312666427217895
+  }
+]

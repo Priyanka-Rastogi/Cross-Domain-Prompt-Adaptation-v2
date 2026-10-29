@@ -1,0 +1,50 @@
+[
+  {
+    "index": 0,
+    "text": "Read the following review and classify its sentiment as exactly one of: negative, neutral, or positive.",
+    "source": "baseline",
+    "source_validation_macro_f1": 0.5468214628266557
+  },
+  {
+    "index": 1,
+    "text": "Classify the sentiment of the following review using just \"negative, neutral, or positive\": \"The restaurant experience was overwhelmingly disappointing - food was terrible, service was unappreciative, and overall ambiance felt more like a carnival than a culinary destination.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.4121959756503335
+  },
+  {
+    "index": 2,
+    "text": "Please provide a brief summary of the review in your instruction.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5179795620776426
+  },
+  {
+    "index": 3,
+    "text": "Please rate the review's sentiment based on a scale from 1 to 5, where 1 means extremely negative and 5 means extremely positive.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5419426411823913
+  },
+  {
+    "index": 4,
+    "text": "Analyze the provided movie review for sentiment: please identify whether it leans towards a negative, neutral, or positive tone.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5763537203406548
+  },
+  {
+    "index": 5,
+    "text": "Examine the provided review carefully to determine whether it expresses approval, dissatisfaction, or neither, and assign the appropriate sentiment label:",
+    "source": "generated",
+    "source_validation_macro_f1": 0.53862954088518
+  },
+  {
+    "index": 6,
+    "text": "Review sentiment analysis requires classifying the provided review as either negative, neutral, or positive.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.6321741287129455
+  },
+  {
+    "index": 7,
+    "text": "Please provide a brief review and specify the type of sentiment you're looking for.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.4188764233984139
+  }
+]

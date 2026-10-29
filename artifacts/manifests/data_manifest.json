@@ -1,0 +1,111 @@
+{
+  "seed": 42,
+  "source_dataset": {
+    "hf_repo": "stanfordnlp/sst",
+    "hf_revision": "8a7d55ee01d70b8ae53e0b3c66a83b2a6198c2a7",
+    "config": "default"
+  },
+  "target_dataset": {
+    "hf_repo": "Yelp/yelp_review_full",
+    "hf_revision": "c1f9ee939b7d05667af864ee1cb066393154bf85",
+    "config": "yelp_review_full"
+  },
+  "row_counts": {
+    "source_train": 8544,
+    "source_validation": 1101,
+    "source_test": 2210,
+    "target_dev": 500,
+    "final_target_test": 1000
+  },
+  "label_distribution_5class": {
+    "source_train": {
+      "positive": 2322,
+      "negative": 2218,
+      "neutral": 1624,
+      "very_positive": 1288,
+      "very_negative": 1092
+    },
+    "source_validation": {
+      "negative": 289,
+      "positive": 279,
+      "neutral": 229,
+      "very_positive": 165,
+      "very_negative": 139
+    },
+    "source_test": {
+      "negative": 633,
+      "positive": 510,
+      "very_positive": 399,
+      "neutral": 389,
+      "very_negative": 279
+    },
+    "target_dev": {
+      "positive": 100,
+      "very_negative": 100,
+      "negative": 100,
+      "very_positive": 100,
+      "neutral": 100
+    },
+    "final_target_test": {
+      "neutral": 200,
+      "positive": 200,
+      "very_positive": 200,
+      "very_negative": 200,
+      "negative": 200
+    }
+  },
+  "label_distribution_3class": {
+    "source_train": {
+      "positive": 3610,
+      "negative": 3310,
+      "neutral": 1624
+    },
+    "source_validation": {
+      "positive": 444,
+      "negative": 428,
+      "neutral": 229
+    },
+    "source_test": {
+      "negative": 912,
+      "positive": 909,
+      "neutral": 389
+    },
+    "target_dev": {
+      "positive": 200,
+      "negative": 200,
+      "neutral": 100
+    },
+    "final_target_test": {
+      "positive": 400,
+      "negative": 400,
+      "neutral": 200
+    }
+  },
+  "duplicate_and_overlap_checks": {
+    "within_role_duplicate_ids": {
+      "source_train": [],
+      "source_validation": [],
+      "source_test": [],
+      "target_dev": [],
+      "final_target_test": []
+    },
+    "within_role_duplicate_text": {
+      "source_train": 10,
+      "source_validation": 1,
+      "source_test": 0,
+      "target_dev": 0,
+      "final_target_test": 0
+    },
+    "cross_role_text_overlap": {
+      "source_train__source_validation": 1,
+      "source_train__source_test": 2
+    }
+  },
+  "file_sha256": {
+    "source_train": "39fbb87351cf68d9e80ee8bd599d90be56e10f7b3ed197464fdb57c947466e3d",
+    "source_validation": "66ae70b4cf8209b8066fef7ef701d2e37dead708e8b9ada00d79b0dca130b5aa",
+    "source_test": "547af8758fe59840361b5ea65a66c3424f16f51b69d73a2f9f7921e95a29ae70",
+    "target_dev": "aba033e4c4642395d413a2bc7adb3216e2e39cefc3511ba10df583de1c770729",
+    "final_target_test": "ffb2f802ebaa65e22e5980b66e772e8b62e4b0d078234679cdef8a49dde94d67"
+  }
+}

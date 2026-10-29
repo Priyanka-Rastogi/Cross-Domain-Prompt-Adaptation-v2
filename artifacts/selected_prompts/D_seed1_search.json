@@ -1,0 +1,441 @@
+{
+  "best": {
+    "instruction_index": 4,
+    "demo_set_index": 8,
+    "macro_f1": 0.678987298267327
+  },
+  "all_results": [
+    {
+      "instruction_index": 4,
+      "demo_set_index": 8,
+      "macro_f1": 0.678987298267327
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 7,
+      "macro_f1": 0.6713553003112769
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 0,
+      "macro_f1": 0.6703877221253598
+    },
+    {
+      "instruction_index": 4,
+      "demo_set_index": 0,
+      "macro_f1": 0.6669668625735952
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 1,
+      "macro_f1": 0.6643485583818985
+    },
+    {
+      "instruction_index": 4,
+      "demo_set_index": 1,
+      "macro_f1": 0.6641226111105629
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 4,
+      "macro_f1": 0.6634893095530702
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 5,
+      "macro_f1": 0.6620423018442443
+    },
+    {
+      "instruction_index": 4,
+      "demo_set_index": 4,
+      "macro_f1": 0.6615769480892463
+    },
+    {
+      "instruction_index": 4,
+      "demo_set_index": 9,
+      "macro_f1": 0.6607185474235023
+    },
+    {
+      "instruction_index": 4,
+      "demo_set_index": 7,
+      "macro_f1": 0.6591485219938364
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 6,
+      "macro_f1": 0.6524903487121069
+    },
+    {
+      "instruction_index": 4,
+      "demo_set_index": 5,
+      "macro_f1": 0.6514039968022867
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 9,
+      "macro_f1": 0.6512633265884852
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 2,
+      "macro_f1": 0.6470965252386818
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 3,
+      "macro_f1": 0.6452756931640321
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 2,
+      "macro_f1": 0.640166310064989
+    },
+    {
+      "instruction_index": 4,
+      "demo_set_index": 6,
+      "macro_f1": 0.6397586932006121
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 5,
+      "macro_f1": 0.6271678259309177
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 0,
+      "macro_f1": 0.6267491771655874
+    },
+    {
+      "instruction_index": 6,
+      "demo_set_index": 8,
+      "macro_f1": 0.6259437296575198
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 9,
+      "macro_f1": 0.6229168311100587
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 6,
+      "macro_f1": 0.6193255121184027
+    },
+    {
+      "instruction_index": 4,
+      "demo_set_index": 2,
+      "macro_f1": 0.6183061665124446
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 3,
+      "macro_f1": 0.618154784785053
+    },
+    {
+      "instruction_index": 4,
+      "demo_set_index": 3,
+      "macro_f1": 0.617207758762634
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 1,
+      "macro_f1": 0.6143994761420389
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 8,
+      "macro_f1": 0.6142192127626246
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 7,
+      "macro_f1": 0.5996947826037466
+    },
+    {
+      "instruction_index": 0,
+      "demo_set_index": 4,
+      "macro_f1": 0.5905707737310762
+    }
+  ],
+  "top_instructions": [
+    {
+      "index": 6,
+      "text": "Review sentiment analysis requires classifying the provided review as either negative, neutral, or positive.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.6321741287129455
+    },
+    {
+      "index": 4,
+      "text": "Analyze the provided movie review for sentiment: please identify whether it leans towards a negative, neutral, or positive tone.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5763537203406548
+    },
+    {
+      "index": 0,
+      "text": "Read the following review and classify its sentiment as exactly one of: negative, neutral, or positive.",
+      "source": "baseline",
+      "source_validation_macro_f1": 0.5468214628266557
+    }
+  ],
+  "demo_sets": [
+    [
+      [
+        "Master of Disguise runs for only 71 minutes and feels like three hours .",
+        "negative"
+      ],
+      [
+        "The film has too many spots where it 's on slippery footing , but is acceptable entertainment for the entire family and one that 's especially fit for the kiddies .",
+        "neutral"
+      ],
+      [
+        "While obviously aimed at kids , The Country Bears ... should keep parents amused with its low groan-to-guffaw ratio .",
+        "positive"
+      ],
+      [
+        "The problem with movies about angels is they have a tendency to slip into hokum .",
+        "negative"
+      ],
+      [
+        "... they missed the boat .",
+        "neutral"
+      ],
+      [
+        "It 's a glorious spectacle like those D.W. Griffith made in the early days of silent film .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "The film 's needlessly opaque intro takes its doe-eyed Crudup out of pre-9 \\/ 11 New York and onto a cross-country road trip of the Homeric kind .",
+        "negative"
+      ],
+      [
+        "Leading a double life in an American film only comes to no good , but not here .",
+        "neutral"
+      ],
+      [
+        "Intriguing and stylish .",
+        "positive"
+      ],
+      [
+        "Despite bearing the Paramount imprint , it 's a bargain-basement European pickup .",
+        "negative"
+      ],
+      [
+        "... gripping and handsome execution , ( but ) there is n't much about K-19 that 's unique or memorable .",
+        "neutral"
+      ],
+      [
+        "Heartwarming and gently comic even as the film breaks your heart .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "One of the worst movies of the year .",
+        "negative"
+      ],
+      [
+        "It comes off as so silly that you would n't be surprised if BA , Murdock and rest of the A-Team were seen giving chase in a black and red van .",
+        "neutral"
+      ],
+      [
+        "This masterfully calibrated psychological thriller thrives on its taut performances and creepy atmosphere even if the screenplay falls somewhat short .",
+        "positive"
+      ],
+      [
+        "Rarely does a film so graceless and devoid of merit as this one come along .",
+        "negative"
+      ],
+      [
+        "A highly personal look at the effects of living a dysfunctionally privileged lifestyle , and by the end , we only wish we could have spent more time in its world .",
+        "neutral"
+      ],
+      [
+        "When cowering and begging at the feet a scruffy Giannini , Madonna gives her best performance since Abel Ferrara had her beaten to a pulp in his Dangerous Game .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "Medem may have disrobed most of the cast , leaving their bodies exposed , but the plot remains as guarded as a virgin with a chastity belt .",
+        "negative"
+      ],
+      [
+        "The film was n't preachy , but it was feminism by the book .",
+        "neutral"
+      ],
+      [
+        "This is a smart movie that knows its classical music , knows its Freud and knows its Sade .",
+        "positive"
+      ],
+      [
+        "The French director has turned out nearly 21\\/2 hours of unfocused , excruciatingly tedious cinema that , half an hour in , starts making water torture seem appealing .",
+        "negative"
+      ],
+      [
+        "Not everything in the film works , including its somewhat convenient ending .",
+        "neutral"
+      ],
+      [
+        "A jaw-droppingly beautiful work that upends nearly every clich\u00e9 of Japanese animation while delivering a more than satisfactory amount of carnage .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "Suffers from its timid parsing of the barn-side target of sons trying to breach gaps in their relationships with their fathers .",
+        "negative"
+      ],
+      [
+        "I ca n't remember the last time I saw an audience laugh so much during a movie , but there 's only one problem ... it 's supposed to be a drama .",
+        "neutral"
+      ],
+      [
+        "Does a good job of establishing a time and place , and of telling a fascinating character 's story .",
+        "positive"
+      ],
+      [
+        "It should be interesting , it should be poignant , it turns out to be affected and boring .",
+        "negative"
+      ],
+      [
+        "Though its atmosphere is intriguing ... the drama is finally too predictable to leave much of an impression .",
+        "neutral"
+      ],
+      [
+        "Other than the slightly flawed ( and fairly unbelievable ) finale , everything else is top shelf .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "Novak contemplates a heartland so overwhelmed by its lack of purpose that it seeks excitement in manufactured high drama .",
+        "negative"
+      ],
+      [
+        "As his circle of friends keeps getting smaller one of the characters in Long Time Dead says ` I 'm telling you , this is f \\*\\*\\* ed ' .",
+        "neutral"
+      ],
+      [
+        "The film delivers what it promises : A look at the `` wild ride '' that ensues when brash young men set out to conquer the online world with laptops , cell phones and sketchy business plans .",
+        "positive"
+      ],
+      [
+        "Loosely speaking , we 're in All of Me territory again , and , strictly speaking , Schneider is no Steve Martin .",
+        "negative"
+      ],
+      [
+        "Affleck merely creates an outline for a role he still needs to grow into , a role that Ford effortlessly filled with authority .",
+        "neutral"
+      ],
+      [
+        "That 's fun for kids of any age .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "The connected stories of Breitbart and Hanussen are actually fascinating , but the filmmaking in Invincible is such that the movie does not do them justice .",
+        "negative"
+      ],
+      [
+        "We get light showers of emotion a couple of times , but then -- strangely -- these wane to an inconsistent and ultimately unsatisfying drizzle .",
+        "neutral"
+      ],
+      [
+        "Quietly engaging .",
+        "positive"
+      ],
+      [
+        "This loud and thoroughly obnoxious comedy about a pair of squabbling working-class spouses is a deeply unpleasant experience .",
+        "negative"
+      ],
+      [
+        "Lillard and Cardellini earn their Scooby Snacks , but not anyone else .",
+        "neutral"
+      ],
+      [
+        "Short-story quaint , touchingly mending a child 's pain for his dead mother via communication with an old woman straight out of Eudora Welty .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "Filled with low-brow humor , gratuitous violence and a disturbing disregard for life .",
+        "negative"
+      ],
+      [
+        "There 's no doubting that this is a highly ambitious and personal project for Egoyan , but it 's also one that , next to his best work , feels clumsy and convoluted .",
+        "neutral"
+      ],
+      [
+        "S1M0NE 's satire is not subtle , but it is effective .",
+        "positive"
+      ],
+      [
+        "By-the-numbers yarn .",
+        "negative"
+      ],
+      [
+        "To show these characters in the act and give them no feelings of remorse -- and to cut repeatedly to the flashback of the original rape -- is overkill to the highest degree .",
+        "neutral"
+      ],
+      [
+        "Devos delivers a perfect performance that captures the innocence and budding demons within a wallflower .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "Press the delete key .",
+        "negative"
+      ],
+      [
+        "It would work much better as a one-hour TV documentary .",
+        "neutral"
+      ],
+      [
+        "Watching The Powerpuff Girls Movie , my mind kept returning to one anecdote for comparison : the cartoon in Japan that gave people seizures .",
+        "positive"
+      ],
+      [
+        "No one can doubt the filmmakers ' motives , but The Guys still feels counterproductive .",
+        "negative"
+      ],
+      [
+        "With its hint of an awkward Hitchcockian theme in tact , Harmon 's daunting narrative promotes a reasonable landscape of conflict and pathos to support the scattershot terrorizing tone",
+        "neutral"
+      ],
+      [
+        "Succeeds as a well-made evocation of a subculture .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "One-sided documentary offers simplistic explanations to a very complex situation .",
+        "negative"
+      ],
+      [
+        "I ca n't .",
+        "neutral"
+      ],
+      [
+        "A seriocomic debut of extravagant promise by Georgian-Israeli director Dover Kosashvili .",
+        "positive"
+      ],
+      [
+        "Too long , and larded with exposition , this somber cop drama ultimately feels as flat as the scruffy sands of its titular community .",
+        "negative"
+      ],
+      [
+        "meanders between its powerful moments .",
+        "neutral"
+      ],
+      [
+        "Strip it of all its excess debris , and you 'd have a 90-minute , four-star movie .",
+        "positive"
+      ]
+    ]
+  ]
+}

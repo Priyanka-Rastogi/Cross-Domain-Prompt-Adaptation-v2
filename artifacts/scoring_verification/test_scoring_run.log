@@ -1,0 +1,22 @@
+============================================================================== test session starts ===============================================================================
+platform linux -- Python 3.12.3, pytest-8.1.1, pluggy-1.5.0 -- /workspace/cross_domain_prompt_adaptation_v2/.venv/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase(PosixPath('/workspace/cross_domain_prompt_adaptation_v2/.hypothesis/examples'))
+rootdir: /workspace/cross_domain_prompt_adaptation_v2
+plugins: anyio-4.8.0, rerunfailures-15.0, hypothesis-6.127.9, xdoctest-1.0.2, flakefinder-1.1.0, xdist-3.6.1, shard-0.1.2, typeguard-4.3.0
+collecting ... collected 8 items
+Running 8 items in this shard: tests/test_scoring.py::test_zero_trainable_params, tests/test_scoring.py::test_token_boundary_clean_for_all_verbalizers, tests/test_scoring.py::test_multi_token_labels_are_actually_multi_token, tests/test_scoring.py::test_individual_vs_batched_scoring_matches, tests/test_scoring.py::test_manual_logprob_matches_masked_model_loss, tests/test_scoring.py::test_no_gold_label_argument_exists, tests/test_scoring.py::test_determinism, tests/test_scoring.py::test_truncation_applies_only_to_review_text
+
+tests/test_scoring.py::test_zero_trainable_params Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|                                                                                                                                   | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 290/290 [00:00<00:00, 11758.52it/s]
+PASSED
+tests/test_scoring.py::test_token_boundary_clean_for_all_verbalizers unclean boundaries (handled, but noted): {}
+PASSED
+tests/test_scoring.py::test_multi_token_labels_are_actually_multi_token PASSED
+tests/test_scoring.py::test_individual_vs_batched_scoring_matches PASSED
+tests/test_scoring.py::test_manual_logprob_matches_masked_model_loss PASSED
+tests/test_scoring.py::test_no_gold_label_argument_exists PASSED
+tests/test_scoring.py::test_determinism PASSED
+tests/test_scoring.py::test_truncation_applies_only_to_review_text PASSED
+
+=============================================================================== 8 passed in 7.95s ================================================================================

@@ -1,0 +1,15 @@
+{
+  "pairwise_overlap": {
+    "source_train__source_validation": 1,
+    "source_train__source_test": 2,
+    "source_train__target_dev": 0,
+    "source_train__final_target_test": 0,
+    "source_validation__source_test": 0,
+    "source_validation__target_dev": 0,
+    "source_validation__final_target_test": 0,
+    "source_test__target_dev": 0,
+    "source_test__final_target_test": 0,
+    "target_dev__final_target_test": 0
+  },
+  "leakage_issues": []
+}

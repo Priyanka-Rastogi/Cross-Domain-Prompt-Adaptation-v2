@@ -1,0 +1,441 @@
+{
+  "best": {
+    "instruction_index": 3,
+    "demo_set_index": 3,
+    "macro_f1": 0.6774987453489477
+  },
+  "all_results": [
+    {
+      "instruction_index": 3,
+      "demo_set_index": 3,
+      "macro_f1": 0.6774987453489477
+    },
+    {
+      "instruction_index": 2,
+      "demo_set_index": 3,
+      "macro_f1": 0.6761284006851555
+    },
+    {
+      "instruction_index": 3,
+      "demo_set_index": 6,
+      "macro_f1": 0.6719113936143478
+    },
+    {
+      "instruction_index": 2,
+      "demo_set_index": 8,
+      "macro_f1": 0.6635303035686789
+    },
+    {
+      "instruction_index": 2,
+      "demo_set_index": 0,
+      "macro_f1": 0.6634322365385835
+    },
+    {
+      "instruction_index": 3,
+      "demo_set_index": 5,
+      "macro_f1": 0.6616692749087115
+    },
+    {
+      "instruction_index": 3,
+      "demo_set_index": 1,
+      "macro_f1": 0.6614575439805069
+    },
+    {
+      "instruction_index": 3,
+      "demo_set_index": 7,
+      "macro_f1": 0.6600262471341608
+    },
+    {
+      "instruction_index": 3,
+      "demo_set_index": 0,
+      "macro_f1": 0.6559651459178922
+    },
+    {
+      "instruction_index": 3,
+      "demo_set_index": 2,
+      "macro_f1": 0.6523106294274111
+    },
+    {
+      "instruction_index": 2,
+      "demo_set_index": 4,
+      "macro_f1": 0.6518879897490811
+    },
+    {
+      "instruction_index": 2,
+      "demo_set_index": 1,
+      "macro_f1": 0.6513796877857065
+    },
+    {
+      "instruction_index": 2,
+      "demo_set_index": 9,
+      "macro_f1": 0.6507485225126199
+    },
+    {
+      "instruction_index": 2,
+      "demo_set_index": 6,
+      "macro_f1": 0.6505956452752066
+    },
+    {
+      "instruction_index": 3,
+      "demo_set_index": 4,
+      "macro_f1": 0.6499435750450681
+    },
+    {
+      "instruction_index": 3,
+      "demo_set_index": 8,
+      "macro_f1": 0.6494988701445982
+    },
+    {
+      "instruction_index": 2,
+      "demo_set_index": 7,
+      "macro_f1": 0.6462601455827094
+    },
+    {
+      "instruction_index": 3,
+      "demo_set_index": 9,
+      "macro_f1": 0.6445146690559742
+    },
+    {
+      "instruction_index": 2,
+      "demo_set_index": 2,
+      "macro_f1": 0.6442804762935549
+    },
+    {
+      "instruction_index": 1,
+      "demo_set_index": 1,
+      "macro_f1": 0.6432666864087423
+    },
+    {
+      "instruction_index": 1,
+      "demo_set_index": 3,
+      "macro_f1": 0.6370350970141049
+    },
+    {
+      "instruction_index": 1,
+      "demo_set_index": 7,
+      "macro_f1": 0.632223683356062
+    },
+    {
+      "instruction_index": 1,
+      "demo_set_index": 5,
+      "macro_f1": 0.6311060242857592
+    },
+    {
+      "instruction_index": 1,
+      "demo_set_index": 6,
+      "macro_f1": 0.6305315883320998
+    },
+    {
+      "instruction_index": 2,
+      "demo_set_index": 5,
+      "macro_f1": 0.629562972554956
+    },
+    {
+      "instruction_index": 1,
+      "demo_set_index": 9,
+      "macro_f1": 0.618807373933611
+    },
+    {
+      "instruction_index": 1,
+      "demo_set_index": 8,
+      "macro_f1": 0.6056597949560363
+    },
+    {
+      "instruction_index": 1,
+      "demo_set_index": 2,
+      "macro_f1": 0.6056455907412667
+    },
+    {
+      "instruction_index": 1,
+      "demo_set_index": 4,
+      "macro_f1": 0.6020868598485419
+    },
+    {
+      "instruction_index": 1,
+      "demo_set_index": 0,
+      "macro_f1": 0.6000927983291122
+    }
+  ],
+  "top_instructions": [
+    {
+      "index": 2,
+      "text": "Based on the review content, determine if it expresses an entirely neutral, positive, or negative sentiment.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.6622690404689452
+    },
+    {
+      "index": 1,
+      "text": "Please read the following review and classify its sentiment as precisely one of: positive, neutral, or negative.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5836696794236712
+    },
+    {
+      "index": 3,
+      "text": "Given this review: 'It seems like a dull, repetitive film that lacks engagement and doesn't offer anything special. This could all potentially be due to the poor acting and low budget. Is it even worth watching? Not at all.' Classify its sentiment as either negative, neutral, or positive",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5614992942911324
+    }
+  ],
+  "demo_sets": [
+    [
+      [
+        "We 've liked Klein 's other work but Rollerball left us cold .",
+        "negative"
+      ],
+      [
+        "Maid in Manhattan might not look so appealing on third or fourth viewing down the road ... But as a high concept vehicle for two bright stars of the moment who can rise to fans ' lofty expectations , the movie passes inspection .",
+        "neutral"
+      ],
+      [
+        "A film with almost as many delights for adults as there are for children and dog lovers .",
+        "positive"
+      ],
+      [
+        "... The movie feels stitched together from stock situations and characters from other movies .",
+        "negative"
+      ],
+      [
+        "An extraordinarily silly thriller .",
+        "neutral"
+      ],
+      [
+        "The fact is that the screen is most alive when it seems most likely that Broomfield 's interviewees , or even himself , will not be for much longer .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "These guys seem great to knock back a beer with but they 're simply not funny performers .",
+        "negative"
+      ],
+      [
+        "A lot of its gags and observations reflect a woman 's point-of-view .",
+        "neutral"
+      ],
+      [
+        "A strong and confident work which works so well for the first 89 minutes , but ends so horrendously confusing in the final two",
+        "positive"
+      ],
+      [
+        "Vulgar is too optimistic a title .",
+        "negative"
+      ],
+      [
+        "` Men in Black II creates a new threat for the MIB , but recycles the same premise .",
+        "neutral"
+      ],
+      [
+        "It 's something of the ultimate Scorsese film , with all the stomach-turning violence , colorful New York gang lore and other hallmarks of his personal cinema painted on their largest-ever historical canvas .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "A grating , emaciated flick .",
+        "negative"
+      ],
+      [
+        "There 's a thin line between likably old-fashioned and fuddy-duddy , and The Count of Monte Cristo ... never quite settles on either side .",
+        "neutral"
+      ],
+      [
+        "The film grows on you .",
+        "positive"
+      ],
+      [
+        "Is it a comedy ?",
+        "negative"
+      ],
+      [
+        "Barrels along at the start before becoming mired in sentimentality .",
+        "neutral"
+      ],
+      [
+        "When one hears Harry Shearer is going to make his debut as a film director , one would hope for the best",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "By turns numbingly dull-witted and disquietingly creepy .",
+        "negative"
+      ],
+      [
+        "LaBute ca n't avoid a fatal mistake in the modern era : He 's changed the male academic from a lower-class Brit to an American , a choice that upsets the novel 's exquisite balance and shreds the fabric of the film .",
+        "neutral"
+      ],
+      [
+        "Cusack 's just brilliant in this .",
+        "positive"
+      ],
+      [
+        "Watchable up until the point where the situations and the dialogue spin hopelessly out of control -- that is to say , when Carol Kane appears on the screen .",
+        "negative"
+      ],
+      [
+        "Kenneth Branagh 's energetic sweet-and-sour performance as a curmudgeonly British playwright grounds this overstuffed , erratic dramedy in which he and his improbably forbearing wife contend with craziness and child-rearing in Los Angeles .",
+        "neutral"
+      ],
+      [
+        "The magic ( and original running time ) of ace Japanimator Hayao Miyazaki 's Spirited Away survives intact in BV 's re-voiced version .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "It made me realize that we really have n't had a good cheesy B-movie playing in theaters since ... well ... since last week 's Reign of Fire .",
+        "negative"
+      ],
+      [
+        "With this new Rollerball , sense and sensibility have been overrun by what can only be characterized as robotic sentiment .",
+        "neutral"
+      ],
+      [
+        "The re-release of Ron Howard 's Apollo 13 in the IMAX format proves absolutely that really , really , really good things can come in enormous packages .",
+        "positive"
+      ],
+      [
+        "It 's clear why Deuces Wild , which was shot two years ago , has been gathering dust on MGM 's shelf .",
+        "negative"
+      ],
+      [
+        "It 's sobering , particularly if anyone still thinks this conflict can be resolved easily , or soon .",
+        "neutral"
+      ],
+      [
+        "... plenty of warmth to go around , with music and laughter and the love of family .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "` Moore is like a progressive bull in a china shop , a provocateur crashing into ideas and special-interest groups as he slaps together his own brand of liberalism . '",
+        "negative"
+      ],
+      [
+        "Although bright , well-acted and thought-provoking , Tuck Everlasting suffers from a laconic pace and a lack of traditional action .",
+        "neutral"
+      ],
+      [
+        "Caine makes us watch as his character awakens to the notion that to be human is eventually to have to choose .",
+        "positive"
+      ],
+      [
+        "I 'd rather watch a rerun of The Powerpuff Girls",
+        "negative"
+      ],
+      [
+        "It 's difficult for a longtime admirer of his work to not be swept up in Invincible and overlook its drawbacks .",
+        "neutral"
+      ],
+      [
+        "It 's that rare family movie -- genuine and sweet without relying on animation or dumb humor .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "A generic bloodbath that often becomes laughably unbearable when it is n't merely offensive .",
+        "negative"
+      ],
+      [
+        "Well , it 's not as pathetic as The Animal .",
+        "neutral"
+      ],
+      [
+        "Pratfalls aside , Barbershop gets its greatest play from the timeless spectacle of people really talking to each other .",
+        "positive"
+      ],
+      [
+        "A well-crafted letdown .",
+        "negative"
+      ],
+      [
+        "There are a few chuckles , but not a single gag sequence that really scores , and the stars seem to be in two different movies .",
+        "neutral"
+      ],
+      [
+        "Grenier is terrific , bringing an unforced , rapid-fire delivery to Toback 's Heidegger - and Nietzsche-referencing dialogue .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "Much like its easily dismissive take on the upscale lifestyle , there is n't much there here .",
+        "negative"
+      ],
+      [
+        "There is one surefire way to get a nomination for a best-foreign-film Oscar : Make a movie about whimsical folk who learn a nonchallenging , life-affirming lesson while walking around a foreign city with stunning architecture .",
+        "neutral"
+      ],
+      [
+        "For almost the first two-thirds of Martin Scorsese 's 168-minute Gangs of New York , I was entranced .",
+        "positive"
+      ],
+      [
+        "Feels like the work of someone who may indeed have finally aged past his prime ... and , perhaps more than he realizes , just wants to be liked by the people who can still give him work .",
+        "negative"
+      ],
+      [
+        "Wallace gets a bit heavy handed with his message at times , and has a visual flair that waxes poetic far too much for our taste .",
+        "neutral"
+      ],
+      [
+        "Top-notch action powers this romantic drama .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "It is bad , but certainly not without merit as entertainment .",
+        "negative"
+      ],
+      [
+        "Ryosuke has created a wry , winning , if languidly paced , meditation on the meaning and value of family .",
+        "neutral"
+      ],
+      [
+        "A surprisingly ` solid ' achievement by director Malcolm D. Lee and writer John Ridley .",
+        "positive"
+      ],
+      [
+        "is a mess .",
+        "negative"
+      ],
+      [
+        "Far away .",
+        "neutral"
+      ],
+      [
+        "This version does justice both to Stevenson and to the sci-fi genre .",
+        "positive"
+      ]
+    ],
+    [
+      [
+        "Ultimately ... the movie is too heady for children , and too preachy for adults .",
+        "negative"
+      ],
+      [
+        "Feels untidily honest .",
+        "neutral"
+      ],
+      [
+        "A sexy , surprising romance ... Idemoto and Kim make a gorgeous pair ... their scenes brim with sexual possibility and emotional danger .",
+        "positive"
+      ],
+      [
+        "I wish it would have just gone more over-the-top instead of trying to have it both ways .",
+        "negative"
+      ],
+      [
+        "Wallace gets a bit heavy handed with his message at times , and has a visual flair that waxes poetic far too much for our taste .",
+        "neutral"
+      ],
+      [
+        "A photographic marvel of sorts , and it 's certainly an invaluable record of that special fishy community .",
+        "positive"
+      ]
+    ]
+  ]
+}

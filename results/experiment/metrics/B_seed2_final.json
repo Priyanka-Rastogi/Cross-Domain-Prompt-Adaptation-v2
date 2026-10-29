@@ -1,0 +1,154 @@
+{
+  "name": "B_seed2",
+  "instruction": "Based on the review content, determine if it expresses an entirely neutral, positive, or negative sentiment.",
+  "demos": null,
+  "source_test": {
+    "accuracy": 0.7049773755656109,
+    "macro_f1": 0.6300394314652956,
+    "per_class": {
+      "negative": {
+        "precision": 0.7543352601156069,
+        "recall": 0.8585526315789473,
+        "f1": 0.803076923076923,
+        "support": 912
+      },
+      "neutral": {
+        "precision": 0.28537735849056606,
+        "recall": 0.3110539845758355,
+        "f1": 0.2976629766297663,
+        "support": 389
+      },
+      "positive": {
+        "precision": 0.8743315508021391,
+        "recall": 0.7194719471947195,
+        "f1": 0.7893783946891973,
+        "support": 909
+      }
+    },
+    "confusion_matrix": {
+      "class_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          783,
+          99,
+          30
+        ],
+        [
+          204,
+          121,
+          64
+        ],
+        [
+          51,
+          204,
+          654
+        ]
+      ]
+    },
+    "n": 2210
+  },
+  "final_target_test": {
+    "accuracy": 0.788,
+    "macro_f1": 0.6987936113888602,
+    "per_class": {
+      "negative": {
+        "precision": 0.7864693446088795,
+        "recall": 0.93,
+        "f1": 0.852233676975945,
+        "support": 400
+      },
+      "neutral": {
+        "precision": 0.5656565656565656,
+        "recall": 0.28,
+        "f1": 0.37458193979933113,
+        "support": 200
+      },
+      "positive": {
+        "precision": 0.8411214953271028,
+        "recall": 0.9,
+        "f1": 0.8695652173913043,
+        "support": 400
+      }
+    },
+    "confusion_matrix": {
+      "class_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          372,
+          18,
+          10
+        ],
+        [
+          86,
+          56,
+          58
+        ],
+        [
+          15,
+          25,
+          360
+        ]
+      ]
+    },
+    "n": 1000
+  },
+  "selected_instruction_index": 2,
+  "all_candidates": [
+    {
+      "index": 2,
+      "text": "Based on the review content, determine if it expresses an entirely neutral, positive, or negative sentiment.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.6622690404689452
+    },
+    {
+      "index": 1,
+      "text": "Please read the following review and classify its sentiment as precisely one of: positive, neutral, or negative.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5836696794236712
+    },
+    {
+      "index": 3,
+      "text": "Given this review: 'It seems like a dull, repetitive film that lacks engagement and doesn't offer anything special. This could all potentially be due to the poor acting and low budget. Is it even worth watching? Not at all.' Classify its sentiment as either negative, neutral, or positive",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5614992942911324
+    },
+    {
+      "index": 5,
+      "text": "Classify the sentiment of the review as either negative, neutral, or positive.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5608786718724956
+    },
+    {
+      "index": 4,
+      "text": "Label this review as either positive, neutral, or negative.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5504660125379331
+    },
+    {
+      "index": 0,
+      "text": "Read the following review and classify its sentiment as exactly one of: negative, neutral, or positive.",
+      "source": "baseline",
+      "source_validation_macro_f1": 0.5468214628266557
+    },
+    {
+      "index": 6,
+      "text": "Please provide a textual description of the review you want analyzed.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.540080670769619
+    },
+    {
+      "index": 7,
+      "text": "Please read the following review carefully and classify its sentiment using the label: negative.",
+      "source": "generated",
+      "source_validation_macro_f1": 0.5312666427217895
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "name": "C_seed1",
+  "instruction": "Read the following review and classify its sentiment as exactly one of: negative, neutral, or positive.",
+  "demos": [
+    [
+      "And Diesel is n't the actor to save it .",
+      "negative"
+    ],
+    [
+      "( Allen 's ) been making piffle for a long while , and Hollywood Ending may be his way of saying that piffle is all that the airhead movie business deserves from him right now .",
+      "neutral"
+    ],
+    [
+      "Watching War Photographer , you come to believe that Nachtwey hates the wars he shows and empathizes with the victims he reveals .",
+      "positive"
+    ],
+    [
+      "Director David Fincher and writer David Koepp ca n't sustain it .",
+      "negative"
+    ],
+    [
+      "Interesting , but not compelling .",
+      "neutral"
+    ],
+    [
+      "A movie that both thrills the eye and , in its over-the-top way , touches the heart .",
+      "positive"
+    ]
+  ],
+  "source_test": {
+    "accuracy": 0.755656108597285,
+    "macro_f1": 0.6230001540953144,
+    "per_class": {
+      "negative": {
+        "precision": 0.7345844504021448,
+        "recall": 0.9013157894736842,
+        "f1": 0.809453471196455,
+        "support": 912
+      },
+      "neutral": {
+        "precision": 0.34177215189873417,
+        "recall": 0.13881748071979436,
+        "f1": 0.1974405850091408,
+        "support": 389
+      },
+      "positive": {
+        "precision": 0.8510182207931404,
+        "recall": 0.8734873487348734,
+        "f1": 0.8621064060803474,
+        "support": 909
+      }
+    },
+    "confusion_matrix": {
+      "class_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          822,
+          52,
+          38
+        ],
+        [
+          234,
+          54,
+          101
+        ],
+        [
+          63,
+          52,
+          794
+        ]
+      ]
+    },
+    "n": 2210
+  },
+  "final_target_test": {
+    "accuracy": 0.775,
+    "macro_f1": 0.6342892071196614,
+    "per_class": {
+      "negative": {
+        "precision": 0.725417439703154,
+        "recall": 0.9775,
+        "f1": 0.8328008519701809,
+        "support": 400
+      },
+      "neutral": {
+        "precision": 0.6388888888888888,
+        "recall": 0.115,
+        "f1": 0.19491525423728814,
+        "support": 200
+      },
+      "positive": {
+        "precision": 0.8494117647058823,
+        "recall": 0.9025,
+        "f1": 0.875151515151515,
+        "support": 400
+      }
+    },
+    "confusion_matrix": {
+      "class_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          391,
+          2,
+          7
+        ],
+        [
+          120,
+          23,
+          57
+        ],
+        [
+          28,
+          11,
+          361
+        ]
+      ]
+    },
+    "n": 1000
+  }
+}

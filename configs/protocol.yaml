@@ -1,0 +1,158 @@
+# Frozen protocol (Section 6). Written and committed BEFORE any model
+# inference is run. Changing any value below after screening begins is a
+# "scientific change outside the frozen plan" and must be flagged, not
+# silently applied.
+
+task_formulations:
+  - name: five_class
+    labels: [very_negative, negative, neutral, positive, very_positive]
+    label_ids: [0, 1, 2, 3, 4]
+  - name: three_class
+    labels: [negative, neutral, positive]
+    label_ids: [0, 1, 2]
+    # Derived deterministically from the five_class label on the same row:
+    # {very_negative, negative} -> negative, {neutral} -> neutral,
+    # {positive, very_positive} -> positive. See docs/DATA_VERIFICATION.md.
+
+datasets:
+  source:
+    name: "Stanford Sentiment Treebank (SST), sentence-level"
+    hf_repo: stanfordnlp/sst
+    hf_config: default
+    hf_revision: 8a7d55ee01d70b8ae53e0b3c66a83b2a6198c2a7  # refs/convert/parquet
+    splits_used:
+      train: source_train
+      validation: source_validation
+      test: source_test
+  target:
+    name: "Yelp Review Full"
+    hf_repo: Yelp/yelp_review_full
+    hf_config: yelp_review_full
+    hf_revision: c1f9ee939b7d05667af864ee1cb066393154bf85
+    splits_used:
+      train: target_dev  # stratified sample; official train split
+      test: final_target_test  # stratified sample; official test split, untouched until freeze
+
+sampling:
+  seed: 42
+  target_dev_n: 500           # stratified by five_class label (~100/class)
+  final_target_test_n: 1000   # stratified by five_class label (~200/class)
+  source_demo_pool_n: 200     # drawn from source_train, for demonstrations + instruction proposal
+  # source_validation and source_test are used in full (1101 / 2210 rows,
+  # already official-sized and small enough to not need further subsampling).
+
+checkpoints:
+  - id: Qwen/Qwen2.5-0.5B-Instruct
+    instruction_tuned: true
+    note: "candidate, not yet validated"
+  - id: Qwen/Qwen2.5-1.5B-Instruct
+    instruction_tuned: true
+    note: "candidate, not yet validated"
+  # A third checkpoint may be added only with a documented reason (brief,
+  # Section 6) if both of the above are ineligible in a formulation where
+  # a documented reason exists to expect an intermediate accuracy regime.
+
+scoring:
+  method: complete_label_conditional_likelihood
+  aggregation: length_normalized_mean_logprob  # mean log-prob per answer token
+  rationale: >
+    Mean (length-normalized) rather than summed log-likelihood is used so
+    that label verbalizers of different token lengths (e.g. "very negative"
+    vs "neutral") are compared fairly; summed log-likelihood would
+    systematically penalize longer verbalizers. This choice is fixed before
+    any scoring is run and is not revisited after seeing results.
+  include_eos_in_score: false
+  prompt_format: model_chat_template  # tokenizer.apply_chat_template, each checkpoint's own template
+  truncation:
+    max_input_tokens: 512
+    truncation_side: right
+    truncated_field: review/sentence text only (instruction and label options never truncated)
+
+verbalizers:
+  five_class:
+    order: [very_negative, negative, neutral, positive, very_positive]
+    text: ["very negative", "negative", "neutral", "positive", "very positive"]
+  three_class:
+    order: [negative, neutral, positive]
+    text: ["negative", "neutral", "positive"]
+
+baseline_instruction:
+  five_class: >
+    Read the following review and classify its sentiment as exactly one of:
+    very negative, negative, neutral, positive, or very positive.
+  three_class: >
+    Read the following review and classify its sentiment as exactly one of:
+    negative, neutral, or positive.
+
+screening:
+  eligibility_range: [0.60, 0.80]  # zero-shot accuracy, inclusive, condition A only
+  tie_break_rule: >
+    If multiple (formulation, checkpoint) settings are eligible, prefer the
+    smallest eligible checkpoint; if still tied, prefer five_class over
+    three_class (finer-grained task, closer to the dissertation's stated
+    "sentiment intensity" framing); if still tied, prefer the setting with
+    accuracy closest to the midpoint of the eligibility range (0.70).
+  stopping_rule: >
+    If no (formulation, checkpoint) setting is eligible, report every result
+    and stop before running the A-D experiment. Do not expand the checkpoint
+    list or change datasets without flagging this explicitly as outside the
+    frozen plan.
+  supervision_disclosure: >
+    target_dev labels (Yelp) ARE used for this screening/selection decision.
+    This is real target-domain supervision for model/task selection, though
+    not for prompt/demonstration search (Section 10, source-only). The study
+    cannot be described as using no target-domain labels at any stage.
+
+experiment_AD:
+  seeds: [0, 1, 2]
+  conditions: [A, B, C, D]
+  instruction_candidates_max: 8  # including the frozen baseline
+  demonstration_sets_max: 10
+  demo_count:
+    five_class: 10   # 2 per class, affordable fixed count covering all 5 classes
+    three_class: 6   # 2 per class
+  selection_metric: source_validation_macro_f1
+  demo_token_budget_rule: >
+    C and D use the same fixed demo_count for the selected formulation and
+    the same demonstration ordering rule (label-interleaved: cycle through
+    classes in verbalizer order, filling each class's quota before repeating),
+    so token budgets are comparable between C and D by construction (same
+    count, same per-example truncation policy) rather than matched post hoc.
+  selection_tie_break: >
+    For B (instruction selection) and D (joint selection), if multiple
+    candidates/combinations tie on source_validation macro-F1, the
+    earliest-proposed candidate (lowest generation index; baseline
+    instruction counts as index 0) wins. Deterministic, fixed before search.
+  instruction_proposal: >
+    Instructions are generated by the SAME frozen model (source-only: the
+    meta-prompt shown to the model for proposing instructions is built from
+    source_train examples and the baseline instruction only; it never sees
+    target/Yelp text). Sampling uses temperature=0.9, do_sample=True, a fixed
+    per-seed generator seed, max_new_tokens=60; duplicate/degenerate
+    (empty or near-identical to an existing candidate) generations are
+    rejected and re-sampled up to 3 extra attempts before the candidate slot
+    is left unfilled for that seed.
+
+  # --- Cost-driven amendment, made before any D combination score was seen
+  # (flagged to the user; documented here per the brief's requirement to
+  # disclose scientific-plan changes) ---
+  d_search_budget_amendment:
+    date: 2026-10-28
+    original_budget: "8 instructions x 10 demo sets = up to 80 combinations/seed"
+    reason: >
+      Measured zero-shot screening throughput (~15-30ms/scoring call on the
+      selected Qwen2.5-0.5B-Instruct, three_class setting) implies the full
+      80-combinations/seed x 1101-row source_validation x 3-seed D search
+      would cost ~2-2.3 hours of GPU wall-clock, versus ~15 minutes for A+B+C
+      combined -- disproportionate for a "bounded, affordable" search.
+    revised_budget: >
+      D searches only the top-3 instructions from B's own source_validation
+      ranking (by macro-F1, using B's tie-break rule above) x the full 10
+      demo sets = 30 combinations/seed. Still a genuine joint
+      instruction x demonstration search, still well under the original
+      <=80/seed ceiling, estimated ~45-65 minutes total for the full D phase.
+    not_applied_based_on_scores: >
+      This reduces search BREADTH (how many instructions are considered),
+      decided from throughput measurements alone, before any D combination's
+      source_validation score was computed -- not a post-hoc change based on
+      which combinations looked promising.

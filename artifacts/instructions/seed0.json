@@ -1,0 +1,50 @@
+[
+  {
+    "index": 0,
+    "text": "Read the following review and classify its sentiment as exactly one of: negative, neutral, or positive.",
+    "source": "baseline",
+    "source_validation_macro_f1": 0.5468214628266557
+  },
+  {
+    "index": 1,
+    "text": "Read the following review carefully and classify its sentiment as either negative, neutral, or positive.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5144268047167825
+  },
+  {
+    "index": 2,
+    "text": "Please provide a review that indicates a sentiment towards the language, describing how well-written the text is.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.4907270340071275
+  },
+  {
+    "index": 3,
+    "text": "Classify your thoughts on this experience based solely on their content without reference to any prior sentiments or opinions expressed by others.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5419932429687057
+  },
+  {
+    "index": 4,
+    "text": "Review sentiment analysis requires identifying whether the overall tone is positive, negative, or neutral.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5311181344727346
+  },
+  {
+    "index": 5,
+    "text": "Please provide me with a specific review excerpt that I can analyze for its sentiment.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5364664832841934
+  },
+  {
+    "index": 6,
+    "text": "Classify this review based on its sentiment, expressing an opinion of either negative, neutral, or positive.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.5939379951770042
+  },
+  {
+    "index": 7,
+    "text": "Please read the review carefully and determine if it expresses either an extremely positive, neutral, or negative sentiment.",
+    "source": "generated",
+    "source_validation_macro_f1": 0.6388489041677384
+  }
+]

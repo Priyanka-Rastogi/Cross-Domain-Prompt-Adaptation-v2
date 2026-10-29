@@ -1,0 +1,60 @@
+{
+  "formulation": "three_class",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "n_examples": 500,
+  "accuracy": 0.764,
+  "macro_f1": 0.5778232428146762,
+  "majority_baseline": 0.4,
+  "uniform_baseline": 0.3333333333333333,
+  "per_class": {
+    "negative": {
+      "precision": 0.7529411764705882,
+      "recall": 0.96,
+      "f1": 0.843956043956044,
+      "support": 200
+    },
+    "neutral": {
+      "precision": 0.6666666666666666,
+      "recall": 0.02,
+      "f1": 0.038834951456310676,
+      "support": 100
+    },
+    "positive": {
+      "precision": 0.7768595041322314,
+      "recall": 0.94,
+      "f1": 0.8506787330316741,
+      "support": 200
+    }
+  },
+  "confusion_matrix": {
+    "class_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "matrix": [
+      [
+        192,
+        0,
+        8
+      ],
+      [
+        52,
+        2,
+        46
+      ],
+      [
+        11,
+        1,
+        188
+      ]
+    ]
+  },
+  "eligible": true,
+  "trainable_params": 0,
+  "load_time_s": 3.459784984588623,
+  "inference_time_s": 7.750291585922241,
+  "peak_gpu_memory_bytes": 3495101952,
+  "n_model_calls": 500
+}

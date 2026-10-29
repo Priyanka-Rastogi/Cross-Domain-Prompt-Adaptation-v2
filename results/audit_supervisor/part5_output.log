@@ -1,0 +1,20 @@
+FIXED DOCUMENTED SAMPLE (ids): ['yelp_test_20382', 'yelp_test_1933', 'yelp_test_23532', 'yelp_test_16004', 'yelp_test_35998', 'yelp_test_36466', 'yelp_test_34899', 'yelp_test_17276', 'yelp_test_28825']
+
+id=yelp_test_20382 gold=negative actual_recorded_pred=negative individual=negative batched=negative independent_scorer=negative max|individual-batched|=1.87e-01 max|individual-independent|=0.00e+00 OK
+id=yelp_test_1933 gold=neutral  actual_recorded_pred=negative individual=negative batched=negative independent_scorer=negative max|individual-batched|=7.50e-02 max|individual-independent|=0.00e+00 OK
+id=yelp_test_23532 gold=positive actual_recorded_pred=positive individual=positive batched=positive independent_scorer=positive max|individual-batched|=1.22e-01 max|individual-independent|=0.00e+00 OK
+id=yelp_test_16004 gold=negative actual_recorded_pred=negative individual=negative batched=negative independent_scorer=negative max|individual-batched|=2.20e-01 max|individual-independent|=0.00e+00 OK
+id=yelp_test_35998 gold=neutral  actual_recorded_pred=positive individual=positive batched=positive independent_scorer=positive max|individual-batched|=1.93e-01 max|individual-independent|=0.00e+00 OK
+id=yelp_test_36466 gold=neutral  actual_recorded_pred=negative individual=negative batched=negative independent_scorer=negative max|individual-batched|=9.78e-02 max|individual-independent|=0.00e+00 OK
+id=yelp_test_34899 gold=positive actual_recorded_pred=positive individual=positive batched=positive independent_scorer=positive max|individual-batched|=1.24e-01 max|individual-independent|=0.00e+00 OK
+id=yelp_test_17276 gold=positive actual_recorded_pred=positive individual=positive batched=positive independent_scorer=positive max|individual-batched|=1.23e-01 max|individual-independent|=0.00e+00 OK
+id=yelp_test_28825 gold=negative actual_recorded_pred=negative individual=negative batched=negative independent_scorer=negative max|individual-batched|=8.63e-02 max|individual-independent|=0.00e+00 OK
+
+=== multi-token verbalizer check (five_class, SAME checkpoint) ===
+  very negative   n_answer_tokens=2 mean_logprob=-4.5781 sum_logprob=-9.1562
+  negative        n_answer_tokens=1 mean_logprob=-9.4686 sum_logprob=-9.4686
+  neutral         n_answer_tokens=1 mean_logprob=-14.5936 sum_logprob=-14.5936
+  positive        n_answer_tokens=1 mean_logprob=-14.0311 sum_logprob=-14.0311
+  very positive   n_answer_tokens=2 mean_logprob=-9.7031 sum_logprob=-19.4062
+
+OVERALL: ALL CLEAN -- individual/batched/independent-scorer/actual-recorded predictions agree on every sampled row.

@@ -1,0 +1,94 @@
+{
+  "formulation": "five_class",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "n_examples": 500,
+  "accuracy": 0.394,
+  "macro_f1": 0.22574607619187975,
+  "majority_baseline": 0.2,
+  "uniform_baseline": 0.2,
+  "per_class": {
+    "very_negative": {
+      "precision": 0.3680297397769517,
+      "recall": 0.99,
+      "f1": 0.5365853658536586,
+      "support": 100
+    },
+    "negative": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 100
+    },
+    "neutral": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 100
+    },
+    "positive": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 100
+    },
+    "very_positive": {
+      "precision": 0.42424242424242425,
+      "recall": 0.98,
+      "f1": 0.5921450151057401,
+      "support": 100
+    }
+  },
+  "confusion_matrix": {
+    "class_order": [
+      "very_negative",
+      "negative",
+      "neutral",
+      "positive",
+      "very_positive"
+    ],
+    "matrix": [
+      [
+        99,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        96,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        59,
+        0,
+        0,
+        0,
+        41
+      ],
+      [
+        13,
+        0,
+        0,
+        0,
+        87
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        98
+      ]
+    ]
+  },
+  "eligible": false,
+  "trainable_params": 0,
+  "load_time_s": 3.9038021564483643,
+  "inference_time_s": 12.43753170967102,
+  "peak_gpu_memory_bytes": 5205917696,
+  "n_model_calls": 500
+}

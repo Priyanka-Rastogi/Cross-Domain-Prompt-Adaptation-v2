@@ -1,0 +1,128 @@
+{
+  "name": "C_seed0",
+  "instruction": "Read the following review and classify its sentiment as exactly one of: negative, neutral, or positive.",
+  "demos": [
+    [
+      "You leave feeling like you 've endured a long workout without your pulse ever racing .",
+      "negative"
+    ],
+    [
+      "Some are fascinating and others are not , and in the end , it is almost a good movie .",
+      "neutral"
+    ],
+    [
+      "A lot of the credit for the film 's winning tone must go to Grant , who has n't lost a bit of the dry humor that first made audiences on both sides of the Atlantic love him .",
+      "positive"
+    ],
+    [
+      "Has nothing good to speak about other than the fact that it is relatively short , tries its best to hide the fact that Seagal 's overweight and out of shape .",
+      "negative"
+    ],
+    [
+      "The climactic events are so well realized that you may forget all about the original conflict , just like the movie does",
+      "neutral"
+    ],
+    [
+      "Graced with the kind of social texture and realism that would be foreign in American teen comedies .",
+      "positive"
+    ]
+  ],
+  "source_test": {
+    "accuracy": 0.753393665158371,
+    "macro_f1": 0.6298223808098565,
+    "per_class": {
+      "negative": {
+        "precision": 0.7406392694063927,
+        "recall": 0.8892543859649122,
+        "f1": 0.8081714000996513,
+        "support": 912
+      },
+      "neutral": {
+        "precision": 0.37209302325581395,
+        "recall": 0.16452442159383032,
+        "f1": 0.2281639928698752,
+        "support": 389
+      },
+      "positive": {
+        "precision": 0.8377518557794273,
+        "recall": 0.8690869086908691,
+        "f1": 0.8531317494600432,
+        "support": 909
+      }
+    },
+    "confusion_matrix": {
+      "class_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          811,
+          53,
+          48
+        ],
+        [
+          220,
+          64,
+          105
+        ],
+        [
+          64,
+          55,
+          790
+        ]
+      ]
+    },
+    "n": 2210
+  },
+  "final_target_test": {
+    "accuracy": 0.777,
+    "macro_f1": 0.6401831774803838,
+    "per_class": {
+      "negative": {
+        "precision": 0.725417439703154,
+        "recall": 0.9775,
+        "f1": 0.8328008519701809,
+        "support": 400
+      },
+      "neutral": {
+        "precision": 0.625,
+        "recall": 0.125,
+        "f1": 0.20833333333333334,
+        "support": 200
+      },
+      "positive": {
+        "precision": 0.8574821852731591,
+        "recall": 0.9025,
+        "f1": 0.879415347137637,
+        "support": 400
+      }
+    },
+    "confusion_matrix": {
+      "class_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "matrix": [
+        [
+          391,
+          3,
+          6
+        ],
+        [
+          121,
+          25,
+          54
+        ],
+        [
+          27,
+          12,
+          361
+        ]
+      ]
+    },
+    "n": 1000
+  }
+}

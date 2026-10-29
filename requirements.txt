@@ -1,0 +1,31 @@
+# Project-added dependencies, installed into .venv (--system-site-packages).
+# torch/torchvision/pytorch-triton/torch_tensorrt/torch-geometric are NOT listed
+# here: they are reused from the container's system site-packages (NVIDIA-built
+# PyTorch 2.7.0a0+7c8ec84dab.nv25.03, CUDA 12.8, sm_100/Blackwell support
+# confirmed) because that build cannot be reinstalled from PyPI. Do not
+# `pip install torch` in this venv.
+#
+# Install with (see ENVIRONMENT.md for why PIP_CONSTRAINT must be cleared):
+#   python3 -m venv --system-site-packages .venv
+#   PIP_CONSTRAINT= .venv/bin/pip install -r requirements.txt
+#
+# The container sets PIP_CONSTRAINT=/etc/pip/constraint.txt globally, which
+# pins pyarrow==19.0.1 for an unrelated system-level RAPIDS/cuDF stack. That
+# pin is incompatible with modern `datasets` (>=4.x needs pyarrow>=24). We
+# override it for this venv's installs only; pip installs pyarrow==24.0.0 and
+# huggingface_hub==1.33.0 into this venv's own site-packages without touching
+# or uninstalling the system-level pyarrow==19.0.1 (pip refuses cross-env
+# uninstalls by design). `pip check` inside this venv reports cudf/pylibcudf
+# as wanting pyarrow<20 -- that is the unrelated system RAPIDS stack we never
+# import from this project, and is expected/harmless.
+
+transformers==5.3.0
+datasets==5.1.0
+accelerate==1.15.0
+huggingface_hub==1.33.0
+pyarrow==24.0.0
+scikit-learn==1.6.1
+pandas==2.2.3
+numpy==1.26.4
+sentencepiece==0.2.2
+tqdm==4.67.1

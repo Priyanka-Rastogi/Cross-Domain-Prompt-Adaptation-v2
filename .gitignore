@@ -1,0 +1,24 @@
+# Python / venv
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Jupyter checkpoint litter (not real content)
+**/.ipynb_checkpoints/
+
+# Resumable scoring caches: large, regenerable by re-running the scoring
+# pipeline against the pinned model/dataset revisions; not needed to inspect
+# or re-verify results (predictions/metrics are already committed directly).
+artifacts/cache/
+artifacts/smoke_cache/
+
+# Dataset CSVs are intentionally NOT committed:
+#  - SST (source): HF card states license: unknown (no formal license found
+#    on Stanford's own release page either) -- unclear redistribution terms.
+#  - Yelp Review Full (target): distributed under the Yelp Dataset Agreement,
+#    a real research/non-commercial-style usage-restricted license.
+# See data/DATASET_README.md (committed) for exact schema/provenance, and
+# src/prepare_data.py + configs/protocol.yaml (pinned HF revisions, committed)
+# to regenerate these files exactly.
+data/*.csv

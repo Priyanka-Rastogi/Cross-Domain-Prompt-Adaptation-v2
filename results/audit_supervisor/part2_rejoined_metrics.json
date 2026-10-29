@@ -1,0 +1,382 @@
+{
+  "A_source_test": {
+    "file": "results/experiment/predictions/A_source_test.csv",
+    "n_rows": 2210,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 2210,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 1689,
+    "total": 2210,
+    "accuracy": 0.7642533936651583,
+    "accuracy_fraction": "1689/2210",
+    "macro_f1": 0.5700660939276604,
+    "predicted_class_counts": {
+      "positive": 1104,
+      "negative": 1090,
+      "neutral": 16
+    }
+  },
+  "A_target_test": {
+    "file": "results/experiment/predictions/A_target_test.csv",
+    "n_rows": 1000,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 1000,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 770,
+    "total": 1000,
+    "accuracy": 0.77,
+    "accuracy_fraction": "770/1000",
+    "macro_f1": 0.5797696560800242,
+    "predicted_class_counts": {
+      "negative": 522,
+      "positive": 473,
+      "neutral": 5
+    }
+  },
+  "B_seed0_source_test": {
+    "file": "results/experiment/predictions/B_seed0_source_test.csv",
+    "n_rows": 2210,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 2210,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 1419,
+    "total": 2210,
+    "accuracy": 0.642081447963801,
+    "accuracy_fraction": "1419/2210",
+    "macro_f1": 0.6142024054561096,
+    "predicted_class_counts": {
+      "negative": 793,
+      "neutral": 753,
+      "positive": 664
+    }
+  },
+  "B_seed0_target_test": {
+    "file": "results/experiment/predictions/B_seed0_target_test.csv",
+    "n_rows": 1000,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 1000,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 743,
+    "total": 1000,
+    "accuracy": 0.743,
+    "accuracy_fraction": "743/1000",
+    "macro_f1": 0.717322749639409,
+    "predicted_class_counts": {
+      "negative": 394,
+      "positive": 310,
+      "neutral": 296
+    }
+  },
+  "B_seed1_source_test": {
+    "file": "results/experiment/predictions/B_seed1_source_test.csv",
+    "n_rows": 2210,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 2210,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 1676,
+    "total": 2210,
+    "accuracy": 0.7583710407239819,
+    "accuracy_fraction": "1676/2210",
+    "macro_f1": 0.6305215774802491,
+    "predicted_class_counts": {
+      "negative": 1042,
+      "positive": 1007,
+      "neutral": 161
+    }
+  },
+  "B_seed1_target_test": {
+    "file": "results/experiment/predictions/B_seed1_target_test.csv",
+    "n_rows": 1000,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 1000,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 775,
+    "total": 1000,
+    "accuracy": 0.775,
+    "accuracy_fraction": "775/1000",
+    "macro_f1": 0.6293661870536986,
+    "predicted_class_counts": {
+      "negative": 510,
+      "positive": 457,
+      "neutral": 33
+    }
+  },
+  "B_seed2_source_test": {
+    "file": "results/experiment/predictions/B_seed2_source_test.csv",
+    "n_rows": 2210,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 2210,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 1558,
+    "total": 2210,
+    "accuracy": 0.7049773755656109,
+    "accuracy_fraction": "1558/2210",
+    "macro_f1": 0.6300394314652955,
+    "predicted_class_counts": {
+      "negative": 1038,
+      "positive": 748,
+      "neutral": 424
+    }
+  },
+  "B_seed2_target_test": {
+    "file": "results/experiment/predictions/B_seed2_target_test.csv",
+    "n_rows": 1000,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 1000,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 788,
+    "total": 1000,
+    "accuracy": 0.788,
+    "accuracy_fraction": "788/1000",
+    "macro_f1": 0.6987936113888601,
+    "predicted_class_counts": {
+      "negative": 473,
+      "positive": 428,
+      "neutral": 99
+    }
+  },
+  "C_seed0_source_test": {
+    "file": "results/experiment/predictions/C_seed0_source_test.csv",
+    "n_rows": 2210,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 2210,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 1665,
+    "total": 2210,
+    "accuracy": 0.753393665158371,
+    "accuracy_fraction": "1665/2210",
+    "macro_f1": 0.6298223808098565,
+    "predicted_class_counts": {
+      "negative": 1095,
+      "positive": 943,
+      "neutral": 172
+    }
+  },
+  "C_seed0_target_test": {
+    "file": "results/experiment/predictions/C_seed0_target_test.csv",
+    "n_rows": 1000,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 1000,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 777,
+    "total": 1000,
+    "accuracy": 0.777,
+    "accuracy_fraction": "777/1000",
+    "macro_f1": 0.6401831774803838,
+    "predicted_class_counts": {
+      "negative": 539,
+      "positive": 421,
+      "neutral": 40
+    }
+  },
+  "C_seed1_source_test": {
+    "file": "results/experiment/predictions/C_seed1_source_test.csv",
+    "n_rows": 2210,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 2210,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 1670,
+    "total": 2210,
+    "accuracy": 0.755656108597285,
+    "accuracy_fraction": "1670/2210",
+    "macro_f1": 0.6230001540953144,
+    "predicted_class_counts": {
+      "negative": 1119,
+      "positive": 933,
+      "neutral": 158
+    }
+  },
+  "C_seed1_target_test": {
+    "file": "results/experiment/predictions/C_seed1_target_test.csv",
+    "n_rows": 1000,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 1000,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 775,
+    "total": 1000,
+    "accuracy": 0.775,
+    "accuracy_fraction": "775/1000",
+    "macro_f1": 0.6342892071196614,
+    "predicted_class_counts": {
+      "negative": 539,
+      "positive": 425,
+      "neutral": 36
+    }
+  },
+  "C_seed2_source_test": {
+    "file": "results/experiment/predictions/C_seed2_source_test.csv",
+    "n_rows": 2210,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 2210,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 1646,
+    "total": 2210,
+    "accuracy": 0.7447963800904978,
+    "accuracy_fraction": "1646/2210",
+    "macro_f1": 0.6160673323090693,
+    "predicted_class_counts": {
+      "negative": 1133,
+      "positive": 902,
+      "neutral": 175
+    }
+  },
+  "C_seed2_target_test": {
+    "file": "results/experiment/predictions/C_seed2_target_test.csv",
+    "n_rows": 1000,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 1000,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 773,
+    "total": 1000,
+    "accuracy": 0.773,
+    "accuracy_fraction": "773/1000",
+    "macro_f1": 0.635221027473905,
+    "predicted_class_counts": {
+      "negative": 546,
+      "positive": 415,
+      "neutral": 39
+    }
+  },
+  "D_seed0_source_test": {
+    "file": "results/experiment/predictions/D_seed0_source_test.csv",
+    "n_rows": 2210,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 2210,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 1630,
+    "total": 2210,
+    "accuracy": 0.7375565610859729,
+    "accuracy_fraction": "1630/2210",
+    "macro_f1": 0.6517781442029933,
+    "predicted_class_counts": {
+      "negative": 971,
+      "positive": 898,
+      "neutral": 341
+    }
+  },
+  "D_seed0_target_test": {
+    "file": "results/experiment/predictions/D_seed0_target_test.csv",
+    "n_rows": 1000,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 1000,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 786,
+    "total": 1000,
+    "accuracy": 0.786,
+    "accuracy_fraction": "786/1000",
+    "macro_f1": 0.6966513902282164,
+    "predicted_class_counts": {
+      "negative": 510,
+      "positive": 394,
+      "neutral": 96
+    }
+  },
+  "D_seed1_source_test": {
+    "file": "results/experiment/predictions/D_seed1_source_test.csv",
+    "n_rows": 2210,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 2210,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 1584,
+    "total": 2210,
+    "accuracy": 0.7167420814479638,
+    "accuracy_fraction": "1584/2210",
+    "macro_f1": 0.6492916620574448,
+    "predicted_class_counts": {
+      "negative": 968,
+      "positive": 794,
+      "neutral": 448
+    }
+  },
+  "D_seed1_target_test": {
+    "file": "results/experiment/predictions/D_seed1_target_test.csv",
+    "n_rows": 1000,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 1000,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 793,
+    "total": 1000,
+    "accuracy": 0.793,
+    "accuracy_fraction": "793/1000",
+    "macro_f1": 0.7297186147186148,
+    "predicted_class_counts": {
+      "negative": 480,
+      "positive": 370,
+      "neutral": 150
+    }
+  },
+  "D_seed2_source_test": {
+    "file": "results/experiment/predictions/D_seed2_source_test.csv",
+    "n_rows": 2210,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 2210,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 1576,
+    "total": 2210,
+    "accuracy": 0.7131221719457014,
+    "accuracy_fraction": "1576/2210",
+    "macro_f1": 0.6589465971849053,
+    "predicted_class_counts": {
+      "negative": 904,
+      "positive": 781,
+      "neutral": 525
+    }
+  },
+  "D_seed2_target_test": {
+    "file": "results/experiment/predictions/D_seed2_target_test.csv",
+    "n_rows": 1000,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "n_joined": 1000,
+    "embedded_gold_vs_rejoined_gold_mismatches": 0,
+    "correct": 795,
+    "total": 1000,
+    "accuracy": 0.795,
+    "accuracy_fraction": "795/1000",
+    "macro_f1": 0.7249519542749544,
+    "predicted_class_counts": {
+      "negative": 473,
+      "positive": 393,
+      "neutral": 134
+    }
+  }
+}
